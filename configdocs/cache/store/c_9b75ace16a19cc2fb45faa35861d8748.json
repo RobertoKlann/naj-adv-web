@@ -1,0 +1,120 @@
+{
+    "name": "App\\Http\\Controllers\\NajWeb\\ContaVirtualController",
+    "line": 16,
+    "short_desc": "Controller dos Boletos.",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Controllers"
+            ]
+        ],
+        "subpackage": [
+            [
+                "NajWeb"
+            ]
+        ],
+        "author": [
+            [
+                "Roberto",
+                "Oswaldo",
+                "Klann"
+            ]
+        ],
+        "since": [
+            [
+                "10\/01\/2020"
+            ]
+        ]
+    },
+    "namespace": "App\\Http\\Controllers\\NajWeb",
+    "file": "C:\\DWR\\Apache24\\htdocs\\naj-adv-web\\configdocs\/..\/app\\Http\\Controllers\\NajWeb\\ContaVirtualController.php",
+    "relative_file": null,
+    "hash": "12ed3e3b74af101807f9c8f121e7cbb77a2632bd",
+    "parent": "App\\Http\\Controllers\\NajController",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "NajController": "App\\Http\\Controllers\\NajController",
+        "ContaVirtualModel": "App\\Models\\ContaVirtualModel"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "onLoad": {
+            "name": "onLoad",
+            "line": 18,
+            "short_desc": "\u00c9 chamado na inicializa\u00e7\u00e3o da classe",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "index": {
+            "name": "index",
+            "line": 25,
+            "short_desc": "Index da rota de boletos.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "proximo": {
+            "name": "proximo",
+            "line": 29,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "create": {
+            "name": "create",
+            "line": 38,
+            "short_desc": "Create da rota de usu\u00e1rios.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "edit": {
+            "name": "edit",
+            "line": 42,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

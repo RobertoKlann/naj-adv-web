@@ -1,0 +1,132 @@
+{
+    "name": "App\\Http\\Controllers\\Api\\UsuarioApiController",
+    "line": 18,
+    "short_desc": "Controllador do usu\u00e1rio para API do CPANEL.",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Controllers"
+            ]
+        ],
+        "subpackage": [
+            [
+                "Api"
+            ]
+        ],
+        "author": [
+            [
+                "Roberto",
+                "Oswaldo",
+                "Klann"
+            ]
+        ],
+        "since": [
+            [
+                "16\/01\/2020"
+            ]
+        ]
+    },
+    "namespace": "App\\Http\\Controllers\\Api",
+    "file": "C:\\DWR\\Apache24\\htdocs\\naj-adv-web\\configdocs\/..\/app\\Http\\Controllers\\Api\\UsuarioApiController.php",
+    "relative_file": null,
+    "hash": "c45bfa516ddd427fa6f4ff2cd9d3ee19ed1ea4cf",
+    "parent": "App\\Http\\Controllers\\Api\\NajApiController",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "JWTAuth": "JWTAuth",
+        "UsuarioModel": "App\\Models\\UsuarioModel",
+        "Request": "Illuminate\\Http\\Request",
+        "NajApiController": "App\\Http\\Controllers\\Api\\NajApiController"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "store": {
+            "name": "store",
+            "line": 20,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "data": {
+                    "name": "data",
+                    "line": 20,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "update": {
+            "name": "update",
+            "line": 29,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "data": {
+                    "name": "data",
+                    "line": 29,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "key": {
+                    "name": "key",
+                    "line": 29,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "generationTokenUsuario": {
+            "name": "generationTokenUsuario",
+            "line": 38,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

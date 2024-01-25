@@ -1,0 +1,1951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>App\Models\NajModel | naj-adv-web</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/sami.css">
+        <script src="../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="../../js/typeahead.min.js"></script>
+        <script src="../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:App_Models_NajModel" data-root-path="../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">naj-adv-web</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                                            <li><a href="../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../App.html">App</a></li><li class="backslash">\</li><li><a href="../../App/Models.html">Models</a></li><li class="backslash">\</li><li>NajModel</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            NajModel
+                
+        </h1>
+    </div>
+
+    <p>abstract     class
+    <strong>NajModel</strong>        extends <abbr title="Illuminate\Database\Eloquent\Model">Model</abbr>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Model base</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_incrementing">
+                                                                                boolean
+                </td>
+                <td>$incrementing</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_timestamps">
+                                                                                boolean
+                </td>
+                <td>$timestamps</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_itemsPerPage">
+                                        protected                                        integer
+                </td>
+                <td>$itemsPerPage</td>
+                <td class="last">Número de itens por página da rota de paginação</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_page">
+                                        protected                                        integer
+                </td>
+                <td>$page</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_columns">
+                                        protected                                        array
+                </td>
+                <td>$columns</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_selection">
+                                        protected                                        array
+                </td>
+                <td>$selection</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_lastColumn">
+                                        protected                                        array
+                </td>
+                <td>$lastColumn</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_joins">
+                                        protected                                        array
+                </td>
+                <td>$joins</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_filterOptions">
+                                        protected                                        array
+                </td>
+                <td>$filterOptions</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_order">
+                                        protected                                        string|null
+                </td>
+                <td>$order</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(array $attributes = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadFilterOptions">loadFilterOptions</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setKeysForSaveQuery">setKeysForSaveQuery</a>(<abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr> $query)
+        
+                                            <p>Set the keys for a save update query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getKeyForSaveQuery">getKeyForSaveQuery</a>(mixed $keyName = null)
+        
+                                            <p>Get the primary key value for a save query.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseQueryFilter">parseQueryFilter</a>($value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Models\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_makePagination">makePagination</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Models\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_newInstanceFromKey">newInstanceFromKey</a>(<abbr title="App\Models\type">type</abbr> $keys)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Models\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFilledAttributesWithoutKey">getFilledAttributesWithoutKey</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Models\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fillSelectForPagination">fillSelectForPagination</a>(<abbr title="App\Models\type">type</abbr> $baseSelect, <abbr title="App\Models\type">type</abbr> $limit, <abbr title="App\Models\type">type</abbr> $offset)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Models\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fillSelectForPaginationCounter">fillSelectForPaginationCounter</a>(<abbr title="App\Models\type">type</abbr> $baseSelect)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Models\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBaseSelect">getBaseSelect</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Models\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveFilters">resolveFilters</a>(<abbr title="App\Models\type">type</abbr> $filters)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Models\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveFilterValue">resolveFilterValue</a>(<abbr title="App\Models\type">type</abbr> $value, <abbr title="App\Models\type">type</abbr> $option)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Models\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fillWithColumns">fillWithColumns</a>($select)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Models\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSelection">getSelection</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_loadTable">loadTable</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Models\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOrder">getOrder</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Models\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getJoins">getJoins</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addJoin">addJoin</a>($table, $column = &#039;id&#039;, $left = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Models\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addLeftJoin">addLeftJoin</a>($table, $relationColumn = &#039;id&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addSelection">addSelection</a>(<abbr title="App\Models\type">type</abbr> $table, <abbr title="App\Models\type">type</abbr> $column)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setHidden">setHidden</a>($_ = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addColumn">addColumn</a>(<abbr title="App\Models\type">type</abbr> $name, <abbr title="App\Models\type">type</abbr> $isPk = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Models\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getColumns">getColumns</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Models\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTableColumns">getTableColumns</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Models\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFilledAttributes">getFilledAttributes</a>(<abbr title="App\Models\type">type</abbr> $reqAttrs = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    $this
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addColumnFrom">addColumnFrom</a>($table, $name, $alias = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Models\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLastColumn">getLastColumn</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLastColumn">setLastColumn</a>(<abbr title="App\Models\type">type</abbr> $table, <abbr title="App\Models\type">type</abbr> $name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setOrder">setOrder</a>(<abbr title="App\Models\type">type</abbr> $order, <abbr title="App\Models\type">type</abbr> $from = &#039;asc&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Models\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOne">getOne</a>($keys)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Models\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getOneFromParam">getOneFromParam</a>(<abbr title="App\Models\type">type</abbr> $keys)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/stdClass">stdClass</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_generateFiltersFromKeys">generateFiltersFromKeys</a>(<abbr title="App\Models\type">type</abbr> $keys)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Models\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_destroyFromParam">destroyFromParam</a>(<abbr title="App\Models\type">type</abbr> $keys)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Models\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fillDelete">fillDelete</a>(<abbr title="App\Models\type">type</abbr> $filters)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Models\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBaseDelete">getBaseDelete</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDataByColumn">getDataByColumn</a>($columnFilter, $valueFilter, $tabela)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_throwException">throwException</a>(<abbr title="App\Models\type">type</abbr> $msg)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 71</div>
+        <code>                    
+    <strong>__construct</strong>(array $attributes = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadFilterOptions">
+        <div class="location">at         line 106</div>
+        <code>            protected        
+    <strong>loadFilterOptions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setKeysForSaveQuery">
+        <div class="location">at         line 118</div>
+        <code>            protected        <abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr>
+    <strong>setKeysForSaveQuery</strong>(<abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr> $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the keys for a save update query.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getKeyForSaveQuery">
+        <div class="location">at         line 138</div>
+        <code>            protected        mixed
+    <strong>getKeyForSaveQuery</strong>(mixed $keyName = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the primary key value for a save query.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$keyName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseQueryFilter">
+        <div class="location">at         line 150</div>
+        <code>                    
+    <strong>parseQueryFilter</strong>($value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makePagination">
+        <div class="location">at         line 158</div>
+        <code>                    <abbr title="App\Models\type">type</abbr>
+    <strong>makePagination</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Models\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_newInstanceFromKey">
+        <div class="location">at         line 204</div>
+        <code>                    <abbr title="App\Models\type">type</abbr>
+    <strong>newInstanceFromKey</strong>(<abbr title="App\Models\type">type</abbr> $keys)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="App\Models\type">type</abbr></td>
+                <td>$keys</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Models\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFilledAttributesWithoutKey">
+        <div class="location">at         line 226</div>
+        <code>                    <abbr title="App\Models\type">type</abbr>
+    <strong>getFilledAttributesWithoutKey</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Models\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fillSelectForPagination">
+        <div class="location">at         line 245</div>
+        <code>                    <abbr title="App\Models\type">type</abbr>
+    <strong>fillSelectForPagination</strong>(<abbr title="App\Models\type">type</abbr> $baseSelect, <abbr title="App\Models\type">type</abbr> $limit, <abbr title="App\Models\type">type</abbr> $offset)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="App\Models\type">type</abbr></td>
+                <td>$baseSelect</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="App\Models\type">type</abbr></td>
+                <td>$limit</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="App\Models\type">type</abbr></td>
+                <td>$offset</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Models\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fillSelectForPaginationCounter">
+        <div class="location">at         line 260</div>
+        <code>                    <abbr title="App\Models\type">type</abbr>
+    <strong>fillSelectForPaginationCounter</strong>(<abbr title="App\Models\type">type</abbr> $baseSelect)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="App\Models\type">type</abbr></td>
+                <td>$baseSelect</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Models\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBaseSelect">
+        <div class="location">at         line 275</div>
+        <code>                    <abbr title="App\Models\type">type</abbr>
+    <strong>getBaseSelect</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Models\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveFilters">
+        <div class="location">at         line 288</div>
+        <code>            protected        <abbr title="App\Models\type">type</abbr>
+    <strong>resolveFilters</strong>(<abbr title="App\Models\type">type</abbr> $filters)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="App\Models\type">type</abbr></td>
+                <td>$filters</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Models\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveFilterValue">
+        <div class="location">at         line 329</div>
+        <code>            protected        <abbr title="App\Models\type">type</abbr>
+    <strong>resolveFilterValue</strong>(<abbr title="App\Models\type">type</abbr> $value, <abbr title="App\Models\type">type</abbr> $option)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="App\Models\type">type</abbr></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="App\Models\type">type</abbr></td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Models\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fillWithColumns">
+        <div class="location">at         line 342</div>
+        <code>                    <abbr title="App\Models\type">type</abbr>
+    <strong>fillWithColumns</strong>($select)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$select</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Models\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSelection">
+        <div class="location">at         line 360</div>
+        <code>                    <abbr title="App\Models\type">type</abbr>
+    <strong>getSelection</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Models\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadTable">
+        <div class="location">at         line 367</div>
+        <code>    abstract        protected        
+    <strong>loadTable</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOrder">
+        <div class="location">at         line 373</div>
+        <code>                    <abbr title="App\Models\type">type</abbr>
+    <strong>getOrder</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Models\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getJoins">
+        <div class="location">at         line 381</div>
+        <code>                    <abbr title="App\Models\type">type</abbr>
+    <strong>getJoins</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Models\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addJoin">
+        <div class="location">at         line 402</div>
+        <code>                    $this
+    <strong>addJoin</strong>($table, $column = &#039;id&#039;, $left = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$table</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$column</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$left</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addLeftJoin">
+        <div class="location">at         line 421</div>
+        <code>                    <abbr title="App\Models\type">type</abbr>
+    <strong>addLeftJoin</strong>($table, $relationColumn = &#039;id&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$table</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$relationColumn</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Models\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addSelection">
+        <div class="location">at         line 431</div>
+        <code>                    $this
+    <strong>addSelection</strong>(<abbr title="App\Models\type">type</abbr> $table, <abbr title="App\Models\type">type</abbr> $column)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="App\Models\type">type</abbr></td>
+                <td>$table</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="App\Models\type">type</abbr></td>
+                <td>$column</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setHidden">
+        <div class="location">at         line 443</div>
+        <code>                    $this
+    <strong>setHidden</strong>($_ = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$_</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addColumn">
+        <div class="location">at         line 465</div>
+        <code>                    $this
+    <strong>addColumn</strong>(<abbr title="App\Models\type">type</abbr> $name, <abbr title="App\Models\type">type</abbr> $isPk = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="App\Models\type">type</abbr></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="App\Models\type">type</abbr></td>
+                <td>$isPk</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getColumns">
+        <div class="location">at         line 492</div>
+        <code>                    <abbr title="App\Models\type">type</abbr>
+    <strong>getColumns</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Models\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTableColumns">
+        <div class="location">at         line 500</div>
+        <code>                    <abbr title="App\Models\type">type</abbr>
+    <strong>getTableColumns</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Models\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFilledAttributes">
+        <div class="location">at         line 517</div>
+        <code>                    <abbr title="App\Models\type">type</abbr>
+    <strong>getFilledAttributes</strong>(<abbr title="App\Models\type">type</abbr> $reqAttrs = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="App\Models\type">type</abbr></td>
+                <td>$reqAttrs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Models\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addColumnFrom">
+        <div class="location">at         line 541</div>
+        <code>                    $this
+    <strong>addColumnFrom</strong>($table, $name, $alias = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$table</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$alias</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLastColumn">
+        <div class="location">at         line 566</div>
+        <code>            protected        <abbr title="App\Models\type">type</abbr>
+    <strong>getLastColumn</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Models\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLastColumn">
+        <div class="location">at         line 575</div>
+        <code>            protected        
+    <strong>setLastColumn</strong>(<abbr title="App\Models\type">type</abbr> $table, <abbr title="App\Models\type">type</abbr> $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="App\Models\type">type</abbr></td>
+                <td>$table</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="App\Models\type">type</abbr></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOrder">
+        <div class="location">at         line 587</div>
+        <code>                    
+    <strong>setOrder</strong>(<abbr title="App\Models\type">type</abbr> $order, <abbr title="App\Models\type">type</abbr> $from = &#039;asc&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="App\Models\type">type</abbr></td>
+                <td>$order</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="App\Models\type">type</abbr></td>
+                <td>$from</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOne">
+        <div class="location">at         line 616</div>
+        <code>                    <abbr title="App\Models\type">type</abbr>
+    <strong>getOne</strong>($keys)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$keys</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Models\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOneFromParam">
+        <div class="location">at         line 649</div>
+        <code>                    <abbr title="App\Models\type">type</abbr>
+    <strong>getOneFromParam</strong>(<abbr title="App\Models\type">type</abbr> $keys)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="App\Models\type">type</abbr></td>
+                <td>$keys</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Models\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_generateFiltersFromKeys">
+        <div class="location">at         line 666</div>
+        <code>            protected        <a target="_blank" href="http://php.net/stdClass">stdClass</a>
+    <strong>generateFiltersFromKeys</strong>(<abbr title="App\Models\type">type</abbr> $keys)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="App\Models\type">type</abbr></td>
+                <td>$keys</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/stdClass">stdClass</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_destroyFromParam">
+        <div class="location">at         line 692</div>
+        <code>                    <abbr title="App\Models\type">type</abbr>
+    <strong>destroyFromParam</strong>(<abbr title="App\Models\type">type</abbr> $keys)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="App\Models\type">type</abbr></td>
+                <td>$keys</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Models\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fillDelete">
+        <div class="location">at         line 718</div>
+        <code>            protected        <abbr title="App\Models\type">type</abbr>
+    <strong>fillDelete</strong>(<abbr title="App\Models\type">type</abbr> $filters)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="App\Models\type">type</abbr></td>
+                <td>$filters</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Models\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBaseDelete">
+        <div class="location">at         line 726</div>
+        <code>            protected        <abbr title="App\Models\type">type</abbr>
+    <strong>getBaseDelete</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Models\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDataByColumn">
+        <div class="location">at         line 730</div>
+        <code>                    
+    <strong>getDataByColumn</strong>($columnFilter, $valueFilter, $tabela)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$columnFilter</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$valueFilter</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$tabela</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_throwException">
+        <div class="location">at         line 749</div>
+        <code>                    
+    <strong>throwException</strong>(<abbr title="App\Models\type">type</abbr> $msg)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="App\Models\type">type</abbr></td>
+                <td>$msg</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../App/Exceptions/NajException.html"><abbr title="App\Exceptions\NajException">NajException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

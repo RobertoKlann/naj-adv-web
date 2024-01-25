@@ -1,0 +1,33 @@
+$repetidos = [];
+                        
+                        //Triagem dos envolvidos
+                        for($j = 0 ; $j < count($envolvidos); $j++){//loop externo
+                            for($k = 0 ; $k < count($envolvidos); $k++){//loop interno
+                                //Verifica se o índice do loop interno é menor ou igual ao do loop externo 
+                                if($k <= $j) continue;
+                                    //Verifica se os ids dos elementos são iguais
+                                    if($envolvidos[$j]->id == $envolvidos[$k]->id){
+                                        //Verifica se os nomes dos elementos são iguais
+                                        if($envolvidos[$j]->nome == $envolvidos[$k]->nome){
+                                            //Verifica se os tipos dos elementos são iguais
+                                            if($envolvidos[$j]->pivot_tipo == $envolvidos[$k]->pivot_tipo){
+                                                //Verifica se os esxtra nomes dos elementos são iguais
+                                                if($envolvidos[$j]->pivot_extra_nome == $envolvidos[$k]->pivot_extra_nome){
+                                                //Seta envolvido nos repetidos
+                                                $repetidos[] = $k;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                        //Extrai os envolvidos filtrados
+                        $envolvidosFiltrados = array_diff(array_keys($envolvidos), $repetidos);
+                        
+                        foreach($envolvidosFiltrados as $index){
+                            $envolvido = $item->resultado->movimentacao->envolvidos[$index];
+                            
+                            //Salva envolvido do BD
+                            
+                        }

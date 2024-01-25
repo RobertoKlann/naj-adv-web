@@ -1,0 +1,3 @@
+[submodule "public/naj-datatable"]
+	path = public/naj-datatable
+	url = https://github.com/deivid-js/naj-datatable.git

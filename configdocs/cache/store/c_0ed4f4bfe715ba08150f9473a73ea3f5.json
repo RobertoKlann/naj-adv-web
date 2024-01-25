@@ -1,0 +1,554 @@
+{
+    "name": "App\\Http\\Controllers\\EscavadorController",
+    "line": 12,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Http\\Controllers",
+    "file": "C:\\DWR\\Apache24\\htdocs\\naj-adv-web\\configdocs\/..\/app\\Http\\Controllers\\NajWeb\\EscavadorController.php",
+    "relative_file": null,
+    "hash": "d3f1d59d0175ebe8a43e70380cc6cb4712e9f8aa",
+    "parent": "App\\Http\\Controllers\\Controller",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Exception": "Exception",
+        "Response": "Illuminate\\Http\\Response",
+        "Request": "Illuminate\\Http\\Request",
+        "Client": "GuzzleHttp\\Client",
+        "Estrutura": "App\\Estrutura"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "solicitarTokenDeAcesso": {
+            "name": "solicitarTokenDeAcesso",
+            "line": 25,
+            "short_desc": "A API do Escavador utiliza o protocolo OAuth 2.0 para autentica\u00e7\u00e3o e autoriza\u00e7\u00e3o,\npermitindo que aplica\u00e7\u00f5es enviem solicita\u00e7\u00f5es autenticadas em nome de usu\u00e1rios individuais do Escavador.",
+            "long_desc": "Para isso, \u00e9 necess\u00e1rio ter uma conta na plataforma. Voc\u00ea pode fazer isso acessando aqui.\nO access_token recebido deve ser utilizado no cabe\u00e7alho das outras requisi\u00e7\u00f5es,\npara que a API identifique o usu\u00e1rio.\nO token de acesso tem vida \u00fatil limitada (valor retornado no campo expires_in) e caso expire,\nser\u00e1 necess\u00e1rio obter um novo token repetindo esta requisi\u00e7\u00e3o.",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "buscarPorTermo": {
+            "name": "buscarPorTermo",
+            "line": 56,
+            "short_desc": "Pesquisa um termo no escavador.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": {
+                "ticket": [
+                    [
+                        "Consome",
+                        "1",
+                        "CR\u00c9DITO",
+                        "por",
+                        "requisi\u00e7\u00e3o."
+                    ],
+                    [
+                        "Para",
+                        "$qo",
+                        "os",
+                        "valores",
+                        "podem",
+                        "ser:"
+                    ]
+                ],
+                "example": [
+                    [
+                        "t:",
+                        "",
+                        "Para",
+                        "pesquisar",
+                        "todos",
+                        "os",
+                        "tipos",
+                        "de",
+                        "entidades."
+                    ],
+                    [
+                        "p:",
+                        "",
+                        "Para",
+                        "pesquisar",
+                        "apenas",
+                        "as",
+                        "pessoas."
+                    ],
+                    [
+                        "i:",
+                        "",
+                        "Para",
+                        "pesquisar",
+                        "apenas",
+                        "as",
+                        "institui\u00e7\u00f5es."
+                    ],
+                    [
+                        "pa:",
+                        "Para",
+                        "pesquisar",
+                        "apenas",
+                        "as",
+                        "patentes."
+                    ],
+                    [
+                        "d:",
+                        "",
+                        "Para",
+                        "pesquisar",
+                        "apenas",
+                        "os",
+                        "Di\u00e1rios",
+                        "Oficiais."
+                    ],
+                    [
+                        "en:",
+                        "Para",
+                        "pesquisar",
+                        "as",
+                        "pessoas",
+                        "e",
+                        "institui\u00e7\u00f5es",
+                        "que",
+                        "s\u00e3o",
+                        "partes",
+                        "em",
+                        "processos."
+                    ],
+                    [
+                        "a:",
+                        "",
+                        "Para",
+                        "pesquisar",
+                        "apenas",
+                        "os",
+                        "artigos.",
+                        "(obrigat\u00f3rio)."
+                    ]
+                ]
+            },
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "q": {
+                    "name": "q",
+                    "line": 56,
+                    "short_desc": "O termo a ser pesquisado. Voc\u00ea pode pesquisar entre aspas dupla para match perfeito (obrigat\u00f3rio).",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "qo": {
+                    "name": "qo",
+                    "line": 56,
+                    "short_desc": "Tipo da entidade a ser pesquisada.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "string",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "page": {
+                    "name": "page",
+                    "line": 56,
+                    "short_desc": "N\u00famero da p\u00e1gina, respeitando o limite informado (opcional).",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "todosOsResultadosDasBuscasAssincronas": {
+            "name": "todosOsResultadosDasBuscasAssincronas",
+            "line": 80,
+            "short_desc": "Consultar todos os resultados das buscas ass\u00edncronas (Busca de processos,\ndocumentos e nomes em sistemas de tribunais).",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": {
+                "ticket": [
+                    [
+                        "GR\u00c1TIS",
+                        "por",
+                        "requisi\u00e7\u00e3o."
+                    ],
+                    [
+                        "Tipos",
+                        "de",
+                        "busca",
+                        "ass\u00edncrona:"
+                    ]
+                ],
+                "example": [
+                    [
+                        "BUSCA_POR_NOME:\t",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "Busca",
+                        "processos",
+                        "pelo",
+                        "nome",
+                        "em",
+                        "tribunais."
+                    ],
+                    [
+                        "BUSCA_POR_DOCUMENTO:\tBusca",
+                        "processos",
+                        "pelo",
+                        "documento",
+                        "(CPF",
+                        "ou",
+                        "CNPJ)",
+                        "em",
+                        "tribunais."
+                    ],
+                    [
+                        "BUSCA_PROCESSO:\t",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "",
+                        "Busca",
+                        "processo",
+                        "pela",
+                        "numera\u00e7\u00e3o",
+                        "CNJ."
+                    ]
+                ]
+            },
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "resultadoEspec\u00edficoDeUmaBuscaAssincrona": {
+            "name": "resultadoEspec\u00edficoDeUmaBuscaAssincrona",
+            "line": 94,
+            "short_desc": "Consultar um resultado espec\u00edfico de uma busca ass\u00edncrona (Busca de processos,\ndocumentos e nomes em sistemas de tribunais).",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": {
+                "ticket": [
+                    [
+                        "GR\u00c1TIS",
+                        "por",
+                        "requisi\u00e7\u00e3o."
+                    ]
+                ]
+            },
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "id": {
+                    "name": "id",
+                    "line": 94,
+                    "short_desc": "Identificador num\u00e9rico do resultado da busca.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "retornarOsCallbacks": {
+            "name": "retornarOsCallbacks",
+            "line": 109,
+            "short_desc": "Consultar todos os callbacks recebidos pela API.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": {
+                "ticket": [
+                    [
+                        "GR\u00c1TIS",
+                        "por",
+                        "requisi\u00e7\u00e3o."
+                    ]
+                ]
+            },
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "data_maxima": {
+                    "name": "data_maxima",
+                    "line": 109,
+                    "short_desc": "Data e hora (em UTC) m\u00e1xima dos callbacks listados (opcional).",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\App\\Http\\Controllers\\date",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "consultarCreditos": {
+            "name": "consultarCreditos",
+            "line": 127,
+            "short_desc": "Retorna o saldo atual dos cr\u00e9ditos.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": {
+                "ticket": [
+                    [
+                        "GR\u00c1TIS",
+                        "por",
+                        "requisi\u00e7\u00e3o."
+                    ]
+                ]
+            },
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "retornarOrigens": {
+            "name": "retornarOrigens",
+            "line": 141,
+            "short_desc": "Retorna as origens de todos os di\u00e1rios disponiveis no Escavador.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": {
+                "ticket": [
+                    [
+                        "GR\u00c1TIS",
+                        "por",
+                        "requisi\u00e7\u00e3o."
+                    ]
+                ]
+            },
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "retornarPaginaDoDiarioOficial": {
+            "name": "retornarPaginaDoDiarioOficial",
+            "line": 157,
+            "short_desc": "Retorna uma p\u00e1gina espec\u00edfica do Di\u00e1rio Oficial pelo seu identificador no Escavador.",
+            "long_desc": "Consome 1 CR\u00c9DITO por requisi\u00e7\u00e3o.",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "diario": {
+                    "name": "diario",
+                    "line": 157,
+                    "short_desc": "Identificador num\u00e9rico de um Diario Oficial.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "downloadDoPDFDaPaginaDoDiarioOficial": {
+            "name": "downloadDoPDFDaPaginaDoDiarioOficial",
+            "line": 175,
+            "short_desc": "Retorna em formato PDF, uma p\u00e1gina do Di\u00e1rio Oficial pelo seu identificador no Escavador.",
+            "long_desc": "Consome 1 CR\u00c9DITO por requisi\u00e7\u00e3o",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "id": {
+                    "name": "id",
+                    "line": 175,
+                    "short_desc": "Identificador num\u00e9rico de um Diario Oficial.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                },
+                "pagina": {
+                    "name": "pagina",
+                    "line": 175,
+                    "short_desc": "N\u00famero da p\u00e1gina do Di\u00e1rio Oficial, respeitando o limite informado. Valor padr\u00e3o: 1.",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "integer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getUserName": {
+            "name": "getUserName",
+            "line": 187,
+            "short_desc": "Obt\u00eam o user name",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getPassword": {
+            "name": "getPassword",
+            "line": 195,
+            "short_desc": "Obt\u00eam o password",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getToken": {
+            "name": "getToken",
+            "line": 203,
+            "short_desc": "Obt\u00eam o token",
+            "long_desc": "",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getHeaders": {
+            "name": "getHeaders",
+            "line": 211,
+            "short_desc": "Retorna o headers da requisi\u00e7\u00e3o",
+            "long_desc": "",
+            "hint": [
+                [
+                    "array",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

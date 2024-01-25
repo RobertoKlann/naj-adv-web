@@ -1,0 +1,122 @@
+/*Aqui começa o css que é do app.css porém sem augumas regras*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#descricao {
+    border-color: #e9ecef !important;
+    width: 100% !important;
+}
+
+#content-select-ajax-naj-nova-tarefa, #content-select-ajax-naj-nova-tarefa-supervisor, #content-select-ajax-naj-nova-tarefa-responsavel {
+    margin-top: 35px;
+    background-color: #fff;
+    border: 1px solid #b3c2cc8a;
+    border-top: none !important;
+    display: none;
+    max-height: 220px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    z-index: 999;
+    position: absolute;
+    width: 77%;
+    margin-left: 85px;
+    font-size: 13px !important;
+}
+
+.content-table-input-ajax {
+    max-height: 170px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.content-footer-table-input-ajax {
+    height: 40px;
+    border-top: 1px solid #c1c1c1;
+}
+
+.span-contador-registros-table-input-ajax {
+    position: absolute;
+    right: 10px;
+    margin-top: 2%;
+}
+
+.col-cidade-tarefa {
+    padding: 1px 9px 1px 1px;
+    overflow-x: auto;
+}
+
+.button-editar-pessoas-tarefa {
+    margin-left: 5px !important;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.z-index-100 {
+    z-index: 100;
+}
+
+
+/* AJUSTES PARA TELAS PEQUENAS */
+@media only screen and (max-width: 766px) {
+
+    .modal-nova-tarefa-naj {
+        min-width: 95%;
+        max-width: 95%;
+    }
+
+    .col-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .col-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .col-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .col-5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .col-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .col-10 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .col-2 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    #content-select-ajax-naj-nova-tarefa, #content-select-ajax-naj-nova-tarefa-supervisor, #content-select-ajax-naj-nova-tarefa-responsavel {
+        margin-left: 46px;
+    }
+}
+
+/* AJUSTES PARA TELAS PEQUENAS */
+@media only screen and (min-width: 800px) {
+
+    .modal-nova-tarefa-naj {
+        min-width: 60%;
+        max-width: 60%;
+    }
+}

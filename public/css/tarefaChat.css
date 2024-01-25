@@ -1,0 +1,70 @@
+.modal-nova-tarefa-naj {
+    min-width: 60% !important;
+    max-width: 60% !important;
+}
+
+.modal-novo-tipo-tarefa {
+    min-width: 40% !important;
+    max-width: 40% !important;
+    margin-top: 15% !important;
+}
+
+.modal-prioridade-tarefa {
+    min-width: 40% !important;
+    max-width: 40% !important;
+    margin-top: 15% !important;
+}
+
+#descricao {
+    border-color: #e9ecef !important;
+    width: 100% !important;
+}
+
+#content-select-ajax-naj-nova-tarefa, #content-select-ajax-naj-nova-tarefa-supervisor, #content-select-ajax-naj-nova-tarefa-responsavel {
+    margin-top: 35px;
+    background-color: #fff;
+    border: 1px solid #b3c2cc8a;
+    border-top: none !important;
+    display: none;
+    max-height: 220px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    z-index: 999;
+    position: absolute;
+    width: 77%;
+    margin-left: 85px;
+    font-size: 13px !important;
+}
+
+.content-table-input-ajax {
+    max-height: 170px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.content-footer-table-input-ajax {
+    height: 40px;
+    border-top: 1px solid #c1c1c1;
+}
+
+.span-contador-registros-table-input-ajax {
+    position: absolute;
+    right: 10px;
+    margin-top: 2%;
+}
+
+.col-cidade-tarefa {
+    padding: 1px 9px 1px 1px;
+    overflow-x: auto;
+}
+
+.button-editar-pessoas-tarefa {
+    margin-left: 5px !important;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.z-index-100 {
+    z-index: 100;
+}

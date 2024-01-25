@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>App\Http\Controllers\EscavadorController | naj-adv-web</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:App_Http_Controllers_EscavadorController" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">naj-adv-web</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../App.html">App</a></li><li class="backslash">\</li><li><a href="../../../App/Http.html">Http</a></li><li class="backslash">\</li><li><a href="../../../App/Http/Controllers.html">Controllers</a></li><li class="backslash">\</li><li>EscavadorController</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            EscavadorController
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>EscavadorController</strong>        extends <a href="../../../App/Http/Controllers/Controller.html"><abbr title="App\Http\Controllers\Controller">Controller</abbr></a>
+</p>
+
+        
+    
+
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Illuminate\Foundation\Auth\Access\AuthorizesRequests">AuthorizesRequests</abbr>
+                                            
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Illuminate\Foundation\Bus\DispatchesJobs">DispatchesJobs</abbr>
+                                            
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Illuminate\Foundation\Validation\ValidatesRequests">ValidatesRequests</abbr>
+                                            
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+            </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_solicitarTokenDeAcesso">solicitarTokenDeAcesso</a>()
+        
+                                            <p>A API do Escavador utiliza o protocolo OAuth 2.0 para autenticação e autorização,
+permitindo que aplicações enviem solicitações autenticadas em nome de usuários individuais do Escavador.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_buscarPorTermo">buscarPorTermo</a>(string $q, string $qo, integer $page)
+        
+                                            <p>Pesquisa um termo no escavador.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_todosOsResultadosDasBuscasAssincronas">todosOsResultadosDasBuscasAssincronas</a>()
+        
+                                            <p>Consultar todos os resultados das buscas assíncronas (Busca de processos,
+documentos e nomes em sistemas de tribunais).</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resultadoEspecíficoDeUmaBuscaAssincrona">resultadoEspecíficoDeUmaBuscaAssincrona</a>(integer $id)
+        
+                                            <p>Consultar um resultado específico de uma busca assíncrona (Busca de processos,
+documentos e nomes em sistemas de tribunais).</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_retornarOsCallbacks">retornarOsCallbacks</a>(<abbr title="App\Http\Controllers\date">date</abbr> $data_maxima)
+        
+                                            <p>Consultar todos os callbacks recebidos pela API.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_consultarCreditos">consultarCreditos</a>()
+        
+                                            <p>Retorna o saldo atual dos créditos.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_retornarOrigens">retornarOrigens</a>()
+        
+                                            <p>Retorna as origens de todos os diários disponiveis no Escavador.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_retornarPaginaDoDiarioOficial">retornarPaginaDoDiarioOficial</a>(integer $diario)
+        
+                                            <p>Retorna uma página específica do Diário Oficial pelo seu identificador no Escavador.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_downloadDoPDFDaPaginaDoDiarioOficial">downloadDoPDFDaPaginaDoDiarioOficial</a>(integer $id, integer $pagina)
+        
+                                            <p>Retorna em formato PDF, uma página do Diário Oficial pelo seu identificador no Escavador.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUserName">getUserName</a>()
+        
+                                            <p>Obtêm o user name</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPassword">getPassword</a>()
+        
+                                            <p>Obtêm o password</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getToken">getToken</a>()
+        
+                                            <p>Obtêm o token</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHeaders">getHeaders</a>()
+        
+                                            <p>Retorna o headers da requisição</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_solicitarTokenDeAcesso">
+        <div class="location">at         line 25</div>
+        <code>                    
+    <strong>solicitarTokenDeAcesso</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>A API do Escavador utiliza o protocolo OAuth 2.0 para autenticação e autorização,
+permitindo que aplicações enviem solicitações autenticadas em nome de usuários individuais do Escavador.</p>                    <p>Para isso, é necessário ter uma conta na plataforma. Você pode fazer isso acessando aqui.
+O access_token recebido deve ser utilizado no cabeçalho das outras requisições,
+para que a API identifique o usuário.
+O token de acesso tem vida útil limitada (valor retornado no campo expires_in) e caso expire,
+será necessário obter um novo token repetindo esta requisição.</p>                            </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_buscarPorTermo">
+        <div class="location">at         line 56</div>
+        <code>                    
+    <strong>buscarPorTermo</strong>(string $q, string $qo, integer $page)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Pesquisa um termo no escavador.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$q</td>
+                <td>O termo a ser pesquisado. Você pode pesquisar entre aspas dupla para match perfeito (obrigatório).</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$qo</td>
+                <td>Tipo da entidade a ser pesquisada.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$page</td>
+                <td>Número da página, respeitando o limite informado (opcional).</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_todosOsResultadosDasBuscasAssincronas">
+        <div class="location">at         line 80</div>
+        <code>                    
+    <strong>todosOsResultadosDasBuscasAssincronas</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Consultar todos os resultados das buscas assíncronas (Busca de processos,
+documentos e nomes em sistemas de tribunais).</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resultadoEspecíficoDeUmaBuscaAssincrona">
+        <div class="location">at         line 94</div>
+        <code>                    
+    <strong>resultadoEspecíficoDeUmaBuscaAssincrona</strong>(integer $id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Consultar um resultado específico de uma busca assíncrona (Busca de processos,
+documentos e nomes em sistemas de tribunais).</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$id</td>
+                <td>Identificador numérico do resultado da busca.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_retornarOsCallbacks">
+        <div class="location">at         line 109</div>
+        <code>                    
+    <strong>retornarOsCallbacks</strong>(<abbr title="App\Http\Controllers\date">date</abbr> $data_maxima)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Consultar todos os callbacks recebidos pela API.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="App\Http\Controllers\date">date</abbr></td>
+                <td>$data_maxima</td>
+                <td>Data e hora (em UTC) máxima dos callbacks listados (opcional).</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_consultarCreditos">
+        <div class="location">at         line 127</div>
+        <code>                    
+    <strong>consultarCreditos</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retorna o saldo atual dos créditos.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_retornarOrigens">
+        <div class="location">at         line 141</div>
+        <code>                    
+    <strong>retornarOrigens</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retorna as origens de todos os diários disponiveis no Escavador.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_retornarPaginaDoDiarioOficial">
+        <div class="location">at         line 157</div>
+        <code>                    
+    <strong>retornarPaginaDoDiarioOficial</strong>(integer $diario)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retorna uma página específica do Diário Oficial pelo seu identificador no Escavador.</p>                    <p>Consome 1 CRÉDITO por requisição.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$diario</td>
+                <td>Identificador numérico de um Diario Oficial.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_downloadDoPDFDaPaginaDoDiarioOficial">
+        <div class="location">at         line 175</div>
+        <code>                    
+    <strong>downloadDoPDFDaPaginaDoDiarioOficial</strong>(integer $id, integer $pagina)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retorna em formato PDF, uma página do Diário Oficial pelo seu identificador no Escavador.</p>                    <p>Consome 1 CRÉDITO por requisição</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>integer</td>
+                <td>$id</td>
+                <td>Identificador numérico de um Diario Oficial.</td>
+            </tr>
+                    <tr>
+                <td>integer</td>
+                <td>$pagina</td>
+                <td>Número da página do Diário Oficial, respeitando o limite informado. Valor padrão: 1.</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUserName">
+        <div class="location">at         line 187</div>
+        <code>                    string
+    <strong>getUserName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Obtêm o user name</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPassword">
+        <div class="location">at         line 195</div>
+        <code>                    string
+    <strong>getPassword</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Obtêm o password</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getToken">
+        <div class="location">at         line 203</div>
+        <code>                    string
+    <strong>getToken</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Obtêm o token</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHeaders">
+        <div class="location">at         line 211</div>
+        <code>                    array
+    <strong>getHeaders</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retorna o headers da requisição</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

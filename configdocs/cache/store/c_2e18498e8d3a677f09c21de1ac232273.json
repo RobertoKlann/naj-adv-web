@@ -1,0 +1,86 @@
+{
+    "name": "App\\Models\\PessoaClienteModel",
+    "line": 14,
+    "short_desc": "Controllador de Pessoa x Usu\u00e1rio tipo cliente.",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Models"
+            ]
+        ],
+        "author": [
+            [
+                "Roberto",
+                "Oswaldo",
+                "Klann"
+            ]
+        ],
+        "since": [
+            [
+                "23\/01\/2020"
+            ]
+        ]
+    },
+    "namespace": "App\\Models",
+    "file": "C:\\DWR\\Apache24\\htdocs\\naj-adv-web\\configdocs\/..\/app\\Models\\PessoaClienteModel.php",
+    "relative_file": null,
+    "hash": "18046f4bfb80f65d9648f66e32f3833079ee88c2",
+    "parent": "App\\Models\\NajModel",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "NajModel": "App\\Models\\NajModel"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "loadTable": {
+            "name": "loadTable",
+            "line": 16,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 2,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getJWTIdentifier": {
+            "name": "getJWTIdentifier",
+            "line": 24,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getJWTCustomClaims": {
+            "name": "getJWTCustomClaims",
+            "line": 28,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

@@ -1,0 +1,120 @@
+
+.user-box-wrapper .user-box {
+    background: #fff;
+    padding: 20px;
+    max-width: 400px;
+    width: 90%;
+    margin: 2.5%;
+}
+
+.tab-content-custom {
+    overflow-x: hidden !important;
+    max-height: 53vh;
+    min-height: 53vh;
+}
+
+.tab-content-custom-finalizar {
+    overflow-x: hidden !important;
+    max-height: 42vh;
+    min-height: 42vh;
+}
+
+.content-footer-custom {
+    border-top: 0.5px solid #b3c2cc8a;
+    position: absolute !important;
+    width: 100%;
+    bottom: 0;
+}
+
+.iconError {
+    color: red;
+}
+
+.iconSuccess {
+    color: #10de10;
+}
+
+.tab-pane-header-custom-fixed {
+    height: 75px;
+    border-bottom: 0.5px solid #b3c2cc8a;
+}
+
+.containerLiberarAcesso {
+    max-height: calc(100vh - 111px) !important;
+    min-height: calc(100vh - 111px) !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.content-full {
+    min-height: 69.7vh;
+}
+
+.tab-content-full {
+    min-height: 69.7vh;
+}
+
+.iconDanger {
+    color: red !important;
+    cursor: pointer;
+}
+
+.btnCustomRelacionamento {
+    border: 1px solid #000;
+}
+
+.content-select-ajax-relacionamento-codigo-acesso {
+    background-color: #fff;
+    margin-top: -33px !important;
+    margin-left: 1px;
+    max-width: 99.7%;
+    border: 1px solid #b3c2cc8a;
+    border-top: none !important;
+    display: none;
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.row-full {
+    width: 100% !important;
+    margin-left: 0%;
+    cursor: pointer;
+}
+
+.row-full:hover {
+    color: #000 !important;
+    background-color: #b3c2cc8a !important;
+}
+
+.col-name {
+    border-right: 1px solid #b3c2cc8a !important;
+    margin: 2px !important;
+    padding: 0 !important;
+}
+
+.col-cpf {
+    border-right: 1px solid #b3c2cc8a !important;
+    margin: 2px !important;
+    padding: 0 !important;
+}
+
+.col-cidade {
+    margin: 2px !important;
+    padding: 0 !important;
+    overflow-x: auto;
+    padding-right: 7px !important;
+}
+
+.row-full:nth-child(odd) {
+    background-color: #fff;
+}
+
+.row-full:nth-child(even) {
+    background-color: #eee;
+}
+
+.tables-dispositivo {
+    border: 1px solid #b3c2cc8a;
+    background-color: #fff;
+}

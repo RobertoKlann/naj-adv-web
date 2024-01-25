@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
+<head>    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Naj - @yield('title')</title>
+        
+    <link href="/ampleAdmin/dist/css/style.min.css" rel="stylesheet">
+    <link href="/imagens/logo-naj-2020_N - Cópia.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link href="/css/app.css" rel="stylesheet">
+
+    <!-- CSS NAJ -->
+    <link rel="stylesheet" href="/naj-datatable/styles/alert.css">
+    <link rel="stylesheet" href="/naj-datatable/styles/loading.css">
+    <link rel="stylesheet" href="/naj-datatable/styles/modal.css">
+    <link rel="stylesheet" href="/naj-datatable/styles/index.css">
+</head>
+
+<body>    
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+
+    <div class="subMenuNaj">
+        <p class="pMenuNaj" onclick="window.location.href = '/naj/usuarios'"><span class="fa fa-arrow-left spanMenuNaj"></span> Consulta</p>
+        <p class="pMenuNaj tabActiveNaj" id="tabCadastroUsuario" onclick="onClickMenuUsuario('edit');"><span class="fas fa-id-badge spanMenuNaj"></span> Cadastro</p>
+        <p class="pMenuNaj" id="tabUsuarioDispositivos" onclick="onClickMenuUsuario('dispositivos');"><span class="fas fa-mobile-alt spanMenuNaj"></span> Dispositivos</p>
+        <p class="pMenuNaj" id="tabUsuarioPermissao" onclick="onClickMenuUsuario('permissoes');"><span class="fas fa-user spanMenuNaj"></span> Permissões</p>
+        <p class="pMenuNaj" id="tabUsuarioRelacionamento" onclick="onClickMenuUsuario('relacionamentos');"><span class="fas fa-users spanMenuNaj"></span> Relacionamentos</p>
+    </div>
+    
+    <div class="card card-naj m-2">
+        <div class="card-header-naj">
+            <p class="card-title-naj">Manutenção de Usuários</p>
+        </div>
+        <div class="card-body-naj scrollable">
+            <form class="form-horizontal" id="form-usuario">
+                <input type="hidden" name="is_update_usuario">
+                <input type="hidden" name="id" id="id" class="form-control">
+    
+                <div class="form-group row">
+                    <label for="nome" class="col-sm-2 control-label label-center">Nome</label>
+                    <div class="col-sm-8">
+                        <div class="input-group">
+                            <input type="text" name="nome" class="form-control">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group row">
+                    <label for="apelido" class="col-sm-2 control-label label-center">Apelido</label>
+                    <div class="col-sm-4">
+                        <div class="input-group">
+                        <input type="text" name="apelido" class="form-control">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group row">
+                    <label for="cpf" class="col-sm-2 control-label label-center">CPF</label>
+                    <div class="col-sm-4">
+                        <div class="input-group">
+                        <input type="text" name="cpf" class="form-control mascaracpf" onkeypress="return onlynumber();">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group row">
+                    <label for="login" class="col-sm-2 control-label label-center">Login</label>
+                    <div class="col-sm-4">
+                        <div class="input-group">
+                            <input type="text" name="login" class="form-control">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group row">
+                    <label for="password" class="col-sm-2 control-label label-center">Senha</label>
+                    <div class="col-sm-4">
+                        <div class="input-group">
+                            <input type="password" name="password" class="form-control">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group row">
+                    <label for="email_recuperacao" class="col-sm-2 control-label">Email Recuperacao</label>
+                    <div class="col-sm-4">
+                        <div class="input-group">
+                            <input type="email" name="email_recuperacao" class="form-control" placeholder="example@gmail.com">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group row">
+                    <label for="mobile_recuperacao" class="col-sm-2 control-label">Mobile Recuperacao</label>
+                    <div class="col-sm-4">
+                        <div class="input-group">
+                            <input type="text" name="mobile_recuperacao" class="form-control mascaracelular" maxlength="16" onkeypress="return onlynumber();">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label for="usuario_tipo_id" class="col-sm-2 control-label label-center">Tipo</label>
+                    <div class="col-sm-4">
+                        <div class="input-group">
+                            <select class="form-control" id="usuario_tipo_id" name="usuario_tipo_id">
+                                <option value="0">Administrador</option>
+                                <option value="1">Usuário</option>
+                                <option value="2">Cliente</option>
+                                <option value="3">Parceiro</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group row">
+                    <label for="status" class="col-sm-2 control-label label-center">Status</label>
+                    <div class="col-sm-4">
+                        <div class="input-group">
+                            <select id="statusUser" name="status" class="form-control">
+                                <option value="A">Ativo</option>
+                                <option value="B">Baixado</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group row">
+                    <label for="data_inclusao" class="col-sm-2 control-label label-center">Data Inclusão</label>
+                    <div class="col-sm-3">
+                        <div class="input-group">
+                            <input type="date" name="data_inclusao" class="form-control" value="{{date('d-m-Y')}}">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group row">
+                    <label for="data_nascimento" class="col-sm-2 control-label label-center">Data Nasc.</label>
+                    <div class="col-sm-3">
+                        <div class="input-group">
+                            <input type="date" name="data_nascimento" class="form-control">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="form-group row" style="display: none;">
+                    <label for="data_baixa" class="col-sm-2 control-label label-center">Data Baixa</label>
+                    <div class="col-sm-3">
+                        <div class="input-group">
+                            <input type="date" name="data_baixa" class="form-control" value="{{date('d-m-Y')}}">
+                        </div>
+                    </div>
+                </div>
+    
+                <input type="hidden" name="_method" value="POST">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            </form>
+        </div>
+        <div class="card-footer-naj">
+            <button type="submit" id="gravarUsuario" class="btn btnLightCustom" title="Gravar">
+                <i class="fas fa-save"></i>
+                Gravar&nbsp;
+            </button>
+            <button type="submit" class="btn btnLightCustom" onclick="onClickCreateUsuario();" title="Incluir novo registro">
+                <i class="fas fa-plus"></i>
+                Novo&nbsp;&nbsp;&nbsp;
+            </button>
+        </div>
+    </div>
+
+    <script src="/ampleAdmin/assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="/ampleAdmin/assets/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="/ampleAdmin/assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/ampleAdmin/dist/js/app.init.mini-sidebar.js"></script>
+	<script src="/ampleAdmin/dist/js/app.init.horizontal-fullwidth.js"></script>	
+	<script src="/ampleAdmin/dist/js/app.js"></script>	
+    <script src="/ampleAdmin/dist/js/app-style-switcher.js"></script>
+    <script src="/ampleAdmin/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+    <script src="/ampleAdmin/assets/extra-libs/sparkline/sparkline.js"></script>
+    <script src="/ampleAdmin/dist/js/waves.js"></script>
+    <script src="/ampleAdmin/dist/js/sidebarmenu.js"></script>
+    <script src="/ampleAdmin/dist/js/custom.min.js"></script>
+
+    <script src="/js/input-mask/jquery.inputmask.js"></script>
+    <script src="/js/input-mask/jquery.inputmask.date.extensions.js"></script>
+    <script src="/js/input-mask/jquery.inputmask.extensions.js"></script>
+    <script src="/js/jQuery-Mask-Plugin/jquery.mask.min.js"></script>
+
+    <script src="/js/NajFunctions.js"></script>
+    <script src="/js/axios.js"></script>
+    <script src="/js/datatable/api.js"></script>
+    <script src="/naj-datatable/src/sweetalert2.min.js"></script>
+    <script src="/naj-datatable/src/functions.js"></script>
+    <script src="/naj-datatable/src/TableModel.js"></script>
+    <script src="/naj-datatable/src/Table.js"></script>
+    <script src="/naj-datatable/src/alerts.js"></script>
+    <script src="/naj-datatable/src/masks.js"></script>
+    <script src="/js/Naj.js"></script>
+    <script src="/js/constantes.js"></script>
+
+    </body>
+</html>

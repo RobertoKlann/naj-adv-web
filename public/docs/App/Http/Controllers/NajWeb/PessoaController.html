@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>App\Http\Controllers\NajWeb\PessoaController | naj-adv-web</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:App_Http_Controllers_NajWeb_PessoaController" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">naj-adv-web</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../App.html">App</a></li><li class="backslash">\</li><li><a href="../../../../App/Http.html">Http</a></li><li class="backslash">\</li><li><a href="../../../../App/Http/Controllers.html">Controllers</a></li><li class="backslash">\</li><li><a href="../../../../App/Http/Controllers/NajWeb.html">NajWeb</a></li><li class="backslash">\</li><li>PessoaController</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            PessoaController
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>PessoaController</strong>        extends <a href="../../../../App/Http/Controllers/NajController.html"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Controller de Pessoas.</p>                                </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Illuminate\Foundation\Auth\Access\AuthorizesRequests">AuthorizesRequests</abbr>
+                                            
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Illuminate\Foundation\Bus\DispatchesJobs">DispatchesJobs</abbr>
+                                            
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Illuminate\Foundation\Validation\ValidatesRequests">ValidatesRequests</abbr>
+                                            
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+            </div>
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>STORE_ACTION</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>UPDATE_ACTION</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DESTROY_ACTION</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>INDEX_ACTION</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SHOW_ACTION</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>WEB_CONTEXT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>API_CONTEXT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_currentAction">
+                                        protected                                        string
+                </td>
+                <td>$currentAction</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#property_currentAction"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_context">
+                                        protected                                        string
+                </td>
+                <td>$context</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#property_context"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_model">
+                                        protected                                        
+                </td>
+                <td>$model</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#property_model"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_isDev">
+                                        protected                                        
+                </td>
+                <td>$isDev</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#property_isDev"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_inLockedTransaction">
+                                        protected                                        
+                </td>
+                <td>$inLockedTransaction</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#property_inLockedTransaction"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_inTransaction">
+                                        protected                                        
+                </td>
+                <td>$inTransaction</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#property_inTransaction"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_isChild">
+                                        protected                                        
+                </td>
+                <td>$isChild</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#property_isChild"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_childrens">
+                                        protected                                        
+                </td>
+                <td>$childrens</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#property_childrens"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method___construct"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_index">index</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_index"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_show">show</a>($key)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_show"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_lockTransaction">lockTransaction</a>($lock = true)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_lockTransaction"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unlockTransaction">unlockTransaction</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_unlockTransaction"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isChild">isChild</a>($is = true)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_isChild"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isNotChild">isNotChild</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_isNotChild"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_begin">begin</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_begin"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rollback">rollback</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_rollback"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_commit">commit</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_commit"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_storeMany">storeMany</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_storeMany"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setCurrentAction">setCurrentAction</a>($currentAction)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_setCurrentAction"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCurrentAction">getCurrentAction</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_getCurrentAction"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_destroyMany">destroyMany</a>(<abbr title="App\Http\Controllers\type">type</abbr> $list)
+        
+                                            <p>Exclui vários registros.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_destroyMany"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Http\Controllers\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_destroy">destroy</a>(<abbr title="App\Http\Controllers\type">type</abbr> $key)
+        
+                                            <p>Excluir um registro.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_destroy"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_update">update</a>($key)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_update"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Http\Controllers\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_store">store</a>($attrs = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_store"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Http\Controllers\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_extractMessageFromException">extractMessageFromException</a>(<a href="../../../../App/Exceptions/NajException.html"><abbr title="App\Exceptions\NajException">NajException</abbr></a> $e)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_extractMessageFromException"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Http\Controllers\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveValidate">resolveValidate</a>(<abbr title="App\Http\Controllers\type">type</abbr> $data)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_resolveValidate"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Http\Controllers\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveResponse">resolveResponse</a>(<abbr title="App\Http\Controllers\type">type</abbr> $data, <abbr title="App\Http\Controllers\type">type</abbr> $code = 200)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_resolveResponse"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_resolveWebContext">resolveWebContext</a>($pessoas, <abbr title="App\Http\Controllers\type">type</abbr> $code)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setModel">setModel</a>(<abbr title="App\Http\Controllers\type">type</abbr> $model)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_setModel"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Http\Controllers\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getModel">getModel</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_getModel"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Http\Controllers\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_paginate">paginate</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_paginate"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Http\Controllers\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseQueryFilter">parseQueryFilter</a>(<abbr title="App\Http\Controllers\type">type</abbr> $value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_parseQueryFilter"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_throwException">throwException</a>(<abbr title="App\Http\Controllers\type">type</abbr> $msg)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_throwException"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_onLoad">onLoad</a>()
+        
+                                            <p>É chamado na inicialização da classe</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_handleItems">handleItems</a>(<abbr title="App\Http\Controllers\type">type</abbr> $model = null)
+        
+                                            <p>Utilizado para manipular itens da</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="App\Http\Controllers\type">type</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validateStore">validateStore</a>(<abbr title="App\Http\Controllers\type">type</abbr> $data)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_validateStore"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validateUpdate">validateUpdate</a>($data)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_validateUpdate"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_validateDestroy">validateDestroy</a>($data)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../App/Http/Controllers/NajController.html#method_validateDestroy"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_proximo">proximo</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_storeItems">storeItems</a>($model)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_updateItems">updateItems</a>($model)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_destroyItems">destroyItems</a>($model)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method___construct"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 75</div>
+        <code>                    
+    <strong>__construct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_index">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_index"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 87</div>
+        <code>                    
+    <strong>index</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_show">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_show"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 105</div>
+        <code>                    
+    <strong>show</strong>($key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_lockTransaction">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_lockTransaction"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 123</div>
+        <code>                    
+    <strong>lockTransaction</strong>($lock = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$lock</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unlockTransaction">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_unlockTransaction"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 127</div>
+        <code>                    
+    <strong>unlockTransaction</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isChild">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_isChild"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 131</div>
+        <code>                    
+    <strong>isChild</strong>($is = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$is</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isNotChild">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_isNotChild"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 135</div>
+        <code>                    
+    <strong>isNotChild</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_begin">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_begin"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 139</div>
+        <code>                    
+    <strong>begin</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rollback">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_rollback"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 147</div>
+        <code>                    
+    <strong>rollback</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_commit">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_commit"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 155</div>
+        <code>                    
+    <strong>commit</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_storeMany">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_storeMany"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 163</div>
+        <code>                    
+    <strong>storeMany</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCurrentAction">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_setCurrentAction"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 215</div>
+        <code>                    
+    <strong>setCurrentAction</strong>($currentAction)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$currentAction</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCurrentAction">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_getCurrentAction"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 219</div>
+        <code>                    
+    <strong>getCurrentAction</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_destroyMany">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_destroyMany"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 230</div>
+        <code>                    
+    <strong>destroyMany</strong>(<abbr title="App\Http\Controllers\type">type</abbr> $list)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Exclui vários registros.</p>                    <p>Obs: os registros deve ser separados por ';', e também devem
+respeitar o método 'destroy'</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="App\Http\Controllers\type">type</abbr></td>
+                <td>$list</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_destroy">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_destroy"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 283</div>
+        <code>                    <abbr title="App\Http\Controllers\type">type</abbr>
+    <strong>destroy</strong>(<abbr title="App\Http\Controllers\type">type</abbr> $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Excluir um registro.</p>                    <p>Obs: a chave deve ser um objeto codificado em base64</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="App\Http\Controllers\type">type</abbr></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Http\Controllers\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_update"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 311</div>
+        <code>                    
+    <strong>update</strong>($key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_store">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_store"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 369</div>
+        <code>                    <abbr title="App\Http\Controllers\type">type</abbr>
+    <strong>store</strong>($attrs = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$attrs</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Http\Controllers\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extractMessageFromException">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_extractMessageFromException"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 416</div>
+        <code>            protected        <abbr title="App\Http\Controllers\type">type</abbr>
+    <strong>extractMessageFromException</strong>(<a href="../../../../App/Exceptions/NajException.html"><abbr title="App\Exceptions\NajException">NajException</abbr></a> $e)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../App/Exceptions/NajException.html"><abbr title="App\Exceptions\NajException">NajException</abbr></a></td>
+                <td>$e</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Http\Controllers\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveValidate">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_resolveValidate"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 427</div>
+        <code>                    <abbr title="App\Http\Controllers\type">type</abbr>
+    <strong>resolveValidate</strong>(<abbr title="App\Http\Controllers\type">type</abbr> $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="App\Http\Controllers\type">type</abbr></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Http\Controllers\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveResponse">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_resolveResponse"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 454</div>
+        <code>                    <abbr title="App\Http\Controllers\type">type</abbr>
+    <strong>resolveResponse</strong>(<abbr title="App\Http\Controllers\type">type</abbr> $data, <abbr title="App\Http\Controllers\type">type</abbr> $code = 200)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="App\Http\Controllers\type">type</abbr></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="App\Http\Controllers\type">type</abbr></td>
+                <td>$code</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Http\Controllers\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_resolveWebContext">
+        <div class="location">at         line 22</div>
+        <code>            protected        
+    <strong>resolveWebContext</strong>($pessoas, <abbr title="App\Http\Controllers\type">type</abbr> $code)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$pessoas</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="App\Http\Controllers\type">type</abbr></td>
+                <td>$code</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setModel">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_setModel"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 481</div>
+        <code>                    
+    <strong>setModel</strong>(<abbr title="App\Http\Controllers\type">type</abbr> $model)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="App\Http\Controllers\type">type</abbr></td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getModel">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_getModel"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 490</div>
+        <code>                    <abbr title="App\Http\Controllers\type">type</abbr>
+    <strong>getModel</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Http\Controllers\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../App/Exceptions/NajException.html"><abbr title="App\Exceptions\NajException">NajException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_paginate">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_paginate"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 502</div>
+        <code>                    <abbr title="App\Http\Controllers\type">type</abbr>
+    <strong>paginate</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Http\Controllers\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseQueryFilter">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_parseQueryFilter"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 511</div>
+        <code>                    <abbr title="App\Http\Controllers\type">type</abbr>
+    <strong>parseQueryFilter</strong>(<abbr title="App\Http\Controllers\type">type</abbr> $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="App\Http\Controllers\type">type</abbr></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Http\Controllers\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_throwException">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_throwException"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 520</div>
+        <code>                    
+    <strong>throwException</strong>(<abbr title="App\Http\Controllers\type">type</abbr> $msg)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="App\Http\Controllers\type">type</abbr></td>
+                <td>$msg</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../App/Exceptions/NajException.html"><abbr title="App\Exceptions\NajException">NajException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_onLoad">
+        <div class="location">at         line 18</div>
+        <code>                    
+    <strong>onLoad</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>É chamado na inicialização da classe</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_handleItems">
+        <div class="location">at         line 32</div>
+        <code>                    
+    <strong>handleItems</strong>(<abbr title="App\Http\Controllers\type">type</abbr> $model = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Utilizado para manipular itens da</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="App\Http\Controllers\type">type</abbr></td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validateStore">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_validateStore"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 540</div>
+        <code>                    <abbr title="App\Http\Controllers\type">type</abbr>
+    <strong>validateStore</strong>(<abbr title="App\Http\Controllers\type">type</abbr> $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="App\Http\Controllers\type">type</abbr></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="App\Http\Controllers\type">type</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validateUpdate">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_validateUpdate"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 542</div>
+        <code>                    
+    <strong>validateUpdate</strong>($data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validateDestroy">
+        <div class="location">in <a href="../../../../App/Http/Controllers/NajController.html#method_validateDestroy"><abbr title="App\Http\Controllers\NajController">NajController</abbr></a> at         line 544</div>
+        <code>                    
+    <strong>validateDestroy</strong>($data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_proximo">
+        <div class="location">at         line 26</div>
+        <code>                    
+    <strong>proximo</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_storeItems">
+        <div class="location">at         line 44</div>
+        <code>                    
+    <strong>storeItems</strong>($model)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateItems">
+        <div class="location">at         line 46</div>
+        <code>                    
+    <strong>updateItems</strong>($model)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_destroyItems">
+        <div class="location">at         line 48</div>
+        <code>                    
+    <strong>destroyItems</strong>($model)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

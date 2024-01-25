@@ -1,0 +1,1 @@
+php configdocs/sami.phar update configdocs/config.php

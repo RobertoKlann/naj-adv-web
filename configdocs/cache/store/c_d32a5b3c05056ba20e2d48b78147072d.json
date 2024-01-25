@@ -1,0 +1,143 @@
+{
+    "name": "App\\Models\\UsuarioModel",
+    "line": 17,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "App\\Models",
+    "file": "C:\\DWR\\Apache24\\htdocs\\naj-adv-web\\configdocs\/..\/app\\Models\\UsuarioModel.php",
+    "relative_file": null,
+    "hash": "c062c51c9baf618b2f4aad0ac353cf7be7c8c759",
+    "parent": "App\\Models\\NajModel",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "DB": "Illuminate\\Support\\Facades\\DB",
+        "Authenticatable": "Illuminate\\Auth\\Authenticatable",
+        "MustVerifyEmail": "Illuminate\\Auth\\MustVerifyEmail",
+        "CanResetPassword": "Illuminate\\Auth\\Passwords\\CanResetPassword",
+        "Authorizable": "Illuminate\\Foundation\\Auth\\Access\\Authorizable",
+        "AuthenticatableContract": "Illuminate\\Contracts\\Auth\\Authenticatable",
+        "AuthorizableContract": "Illuminate\\Contracts\\Auth\\Access\\Authorizable",
+        "CanResetPasswordContract": "Illuminate\\Contracts\\Auth\\CanResetPassword",
+        "JWTSubject": "Tymon\\JWTAuth\\Contracts\\JWTSubject",
+        "Notifiable": "Illuminate\\Notifications\\Notifiable",
+        "NajModel": "App\\Models\\NajModel"
+    },
+    "errors": [],
+    "interfaces": {
+        "Tymon\\JWTAuth\\Contracts\\JWTSubject": "Tymon\\JWTAuth\\Contracts\\JWTSubject",
+        "Illuminate\\Contracts\\Auth\\Authenticatable": "Illuminate\\Contracts\\Auth\\Authenticatable",
+        "Illuminate\\Contracts\\Auth\\Access\\Authorizable": "Illuminate\\Contracts\\Auth\\Access\\Authorizable",
+        "Illuminate\\Contracts\\Auth\\CanResetPassword": "Illuminate\\Contracts\\Auth\\CanResetPassword"
+    },
+    "traits": {
+        "Illuminate\\Notifications\\Notifiable": "Illuminate\\Notifications\\Notifiable",
+        "Illuminate\\Auth\\Authenticatable": "Illuminate\\Auth\\Authenticatable",
+        "Illuminate\\Foundation\\Auth\\Access\\Authorizable": "Illuminate\\Foundation\\Auth\\Access\\Authorizable",
+        "Illuminate\\Auth\\Passwords\\CanResetPassword": "Illuminate\\Auth\\Passwords\\CanResetPassword",
+        "Illuminate\\Auth\\MustVerifyEmail": "Illuminate\\Auth\\MustVerifyEmail"
+    },
+    "properties": [],
+    "methods": {
+        "loadTable": {
+            "name": "loadTable",
+            "line": 25,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 2,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getJWTIdentifier": {
+            "name": "getJWTIdentifier",
+            "line": 49,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "getJWTCustomClaims": {
+            "name": "getJWTCustomClaims",
+            "line": 53,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "setPasswordAttribute": {
+            "name": "setPasswordAttribute",
+            "line": 57,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "password": {
+                    "name": "password",
+                    "line": 57,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "getCodigoGrupoFromPessoa": {
+            "name": "getCodigoGrupoFromPessoa",
+            "line": 63,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "grupo": {
+                    "name": "grupo",
+                    "line": 63,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": null,
+                    "default": null,
+                    "variadic": false,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}
